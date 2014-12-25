@@ -13,6 +13,7 @@ else
   ADMIN_PASS=${ADMIN_PASS:-tomcat}
   
   mysqladmin -u root password ${MYSQL_PASSWD}
+
 cat << EOF > /etc/tomcat7/tomcat-users.xml
 <?xml version='1.0' encoding='utf-8'?>
 <tomcat-users>
