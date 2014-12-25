@@ -12,6 +12,8 @@ echo "GRANT ALL ON drupal.* TO tomcat7user@localhost IDENTIFIED BY 'tomcat7dbpas
 #conf tomcat7 for dspace
 #a=$(cat /etc/tomcat7/server.xml | grep -n "</Host>"| cut -d : -f 1 )
 #sed -i "$((a-1))r /tmp/dspace_tomcat7.conf" /etc/tomcat7/server.xml
+chgrp -R tomcat7 /etc/tomcat7
+chmod -R g+w /etc/tomcat7 
 
 killall mysqld
 sleep 5s
