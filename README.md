@@ -12,3 +12,9 @@ change password for tomcat7 and for mysql root account if you going to use this 
 or you can entry data when creating the container 
 
 docker run -d -p 8080 -e ADMIN_USER=admin -e ADMIN_PASS=password -e MYSQL_PASSWD=mysqlpasswd quantumobject/docker-tomcat7
+
+example of application war running on docker-tomcat7
+
+OpenMRS ==> Open Source Enterprise Medical Record System
+
+[www.quantumobject.com:49164/openmrs/](www.quantumobject.com:49164/openmrs/)
