@@ -56,5 +56,5 @@ Exaple of [Tomcat7][9]
 [5]:https://github.com/QuantumObject/docker-tomcat7
 [6]:http://wiki.apache.org/tomcat/Specifications
 [7]:https://www.jcp.org/en/home/index
-[8]:www.quantumobject.com:49164/openmrs-1.10.0/index.htm
-[9]:www.quantumobject.com:49164/
+[8]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
+[9]:http://www.quantumobject.com:49164/
