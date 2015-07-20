@@ -39,6 +39,12 @@ After that check with your browser at addresses plus the port assigined by docke
 
   - **http://host_ip:port/**
 
+Open Source application that you can deploy with this container :
+
+- OpenMRS [openmrs.org][10] ==>  example of deployment [OpenMRS][8]
+"leading open source enterprise electronic medical record system platform"
+
+
 ## More Info
 
 About tomcat7 [tomcat.apache.org][1]
@@ -58,3 +64,5 @@ Exaple of [Tomcat7][9]
 [7]:https://www.jcp.org/en/home/index
 [8]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
 [9]:http://www.quantumobject.com:49164/
+[10]:http://openmrs.org/
+[11]:http://geonetwork-opensource.org/
