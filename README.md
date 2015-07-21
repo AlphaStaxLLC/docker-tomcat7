@@ -32,7 +32,14 @@ with default configuration:
 or you can provide your own value when running the first time:
 
     $ docker run -d -p 8080 -e ADMIN_USER=admin -e ADMIN_PASS=password -e MYSQL_PASSWD=mysqlpasswd quantumobject/docker-tomcat7
-    
+
+or you can change value at file /etc/tomcat7/tomcat-users.xml by
+
+    $ docker exec -it container_id /bin/bash
+    $ export TERM=xterm
+    $ nano /etc/tomcat7/tomcat-users.xml
+    $ exit
+  
 ## Accessing the Tomcat7 applications:
 
 After that check with your browser at addresses plus the port assigined by docker for port 8080:
