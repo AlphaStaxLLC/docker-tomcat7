@@ -76,10 +76,10 @@ Exaple of [Tomcat7][9]
 [5]:https://github.com/QuantumObject/docker-tomcat7
 [6]:http://wiki.apache.org/tomcat/Specifications
 [7]:https://www.jcp.org/en/home/index
-[8]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
+[8]:http://www.quantumobject.com:49164/openmrs/
 [9]:http://www.quantumobject.com:49164/
 [10]:http://openmrs.org/
 [11]:http://geonetwork-opensource.org/
-[12]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
+[12]:http://www.quantumobject.com:49164/geonetwork/
 [13]:http://geoserver.org/
-[14]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
+[14]:http://www.quantumobject.com:49164/geoserver/
