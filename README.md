@@ -49,7 +49,16 @@ After that check with your browser at addresses plus the port assigined by docke
 Open Source application that you can deploy with this container :
 
 - OpenMRS [openmrs.org][10] ==>  example of deployment [OpenMRS][8]
+
 "leading open source enterprise electronic medical record system platform"
+
+- GeoNetwork [geonetwork-opensource.org][11] ==> example of deployment [GeoNetwork][12]
+
+"GeoNetwork is a catalog application to manage spatially referenced resources. It provides powerful metadata editing and search functions as well as an interactive web map viewer. It is currently used in numerous Spatial Data Infrastructure initiatives across the world." 
+
+ - GeoServer [geoserver.org][13]  ==> example of deployment [GeoServer][14]
+ 
+"GeoServer is an open source server for sharing geospatial data."
 
 
 ## More Info
@@ -57,8 +66,6 @@ Open Source application that you can deploy with this container :
 About tomcat7 [tomcat.apache.org][1]
 
 To help improve this container [quantumobject/docker-tomcat7][5]
-
-Example of WAR application running on docker-tomcat7: [OpenMRS][8]
 
 Exaple of [Tomcat7][9]
 
@@ -73,3 +80,6 @@ Exaple of [Tomcat7][9]
 [9]:http://www.quantumobject.com:49164/
 [10]:http://openmrs.org/
 [11]:http://geonetwork-opensource.org/
+[12]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
+[13]:http://geoserver.org/
+[14]:http://www.quantumobject.com:49164/openmrs-1.10.0/index.htm
