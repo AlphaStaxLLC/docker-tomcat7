@@ -58,7 +58,7 @@ Them link to Tomcat7 container
 
 where when been ask for database need to replace localhost for db.
 
-##Open Source application that you can deploy with this container :
+##Open Source application that you can deploy with this container
 
 - OpenMRS [openmrs.org][10] ==>  example of deployment [OpenMRS][8]
 
