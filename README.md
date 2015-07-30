@@ -2,8 +2,6 @@
 
 Docker container for [tomcat7][3]
 
-Container running tomcat7 and relate services plus mysql to be use to run war application.
-
 "Apache Tomcat version 7.0 implements the Servlet 3.0 and JavaServer Pages 2.2 [specifications][6] from the [Java Community Process][7], and includes many additional features that make it a useful platform for developing and deploying web applications and web services."
 
 ## Install dependencies
