@@ -13,7 +13,7 @@ Container running tomcat7 and relate services plus mysql to be use to run war ap
 To install docker in Ubuntu 14.04 use the commands:
 
     $ sudo apt-get update
-    $ sudo apt-get install docker.io
+    $ wget -qO- https://get.docker.com/ | sh
 
  To install docker in other operating systems check [docker online documentation][4]
 
@@ -25,13 +25,12 @@ To run container use the command below:
 
 with default configuration:
 
-  - MYSQL_PASSWD: mysqlpsswd
   - ADMIN_USER: admin
   - ADMIN_PASS: tomcat
   
 or you can provide your own value when running the first time:
 
-    $ docker run -d -p 8080 -e ADMIN_USER=admin -e ADMIN_PASS=password -e MYSQL_PASSWD=mysqlpasswd quantumobject/docker-tomcat7
+    $ docker run -d -p 8080 -e ADMIN_USER=admin -e ADMIN_PASS=password quantumobject/docker-tomcat7
 
 or you can change value at file /etc/tomcat7/tomcat-users.xml by
 
@@ -46,7 +45,22 @@ After that check with your browser at addresses plus the port assigined by docke
 
   - **http://host_ip:port/**
 
-Open Source application that you can deploy with this container :
+
+## If you need a database like MySQL or progreSQL you can link container :
+
+    $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+or
+
+    $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql
+
+Them link to Tomcat7 container
+
+    $ docker run -d -p 8080 --link [some-postgres|some-mysql]:db quantumobject/docker-tomcat7
+
+where when been ask for database need to replace localhost for db.
+
+##Open Source application that you can deploy with this container :
 
 - OpenMRS [openmrs.org][10] ==>  example of deployment [OpenMRS][8]
 
