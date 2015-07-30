@@ -1,12 +1,7 @@
-
 #name of container: docker-tomcat7
 #versison of container: 0.1.1
 FROM quantumobject/docker-baseimage
 MAINTAINER Angel Rodriguez "angel@quantumobject.com"
-
-#add repository and update the container
-#Installation of nesesary package/software for this containers...
-RUN echo "deb http://archive.ubuntu.com/ubuntu utopic-backports main restricted " >> /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y -q --force-yes tomcat7 \
                                                         tomcat7-common \
@@ -17,7 +12,7 @@ RUN apt-get update && apt-get install -y -q --force-yes tomcat7 \
                                                   && apt-get clean \
                                                   && rm -rf /tmp/* /var/tmp/* \
                                                   && rm -rf /var/lib/apt/lists/*
-                                                
+
 ##startup scripts
 #Pre-config scrip that maybe need to be run one time only when the container run the first time .. using a flag to don't
 #run it again ... use for conf for service ... when run the first time ...
