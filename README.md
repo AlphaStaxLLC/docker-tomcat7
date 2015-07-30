@@ -1,6 +1,6 @@
 # docker-tomcat7
 
-Docker container for [tomcat7][3]
+Docker container for [Tomcat7][3]
 
 "Apache Tomcat version 7.0 implements the Servlet 3.0 and JavaServer Pages 2.2 [specifications][6] from the [Java Community Process][7], and includes many additional features that make it a useful platform for developing and deploying web applications and web services."
 
@@ -75,7 +75,7 @@ where when been ask for database need to replace localhost for db.
 
 ## More Info
 
-About tomcat7 [tomcat.apache.org][1]
+About Tomcat7 [tomcat.apache.org][1]
 
 To help improve this container [quantumobject/docker-tomcat7][5]
 
