@@ -72,6 +72,9 @@ where when been ask for database need to replace localhost for db.
  
 "GeoServer is an open source server for sharing geospatial data."
 
+ - OpenSearchServer [www.opensearchserver.com][15]  ==> example of deployment [OpenSearchServer][16]
+ 
+"Open-source enterprise class search engine software"
 
 ## More Info
 
@@ -95,3 +98,5 @@ Exaple of [Tomcat7][9]
 [12]:http://www.quantumobject.com:49164/geonetwork/
 [13]:http://geoserver.org/
 [14]:http://www.quantumobject.com:49164/geoserver/
+[15]:http://www.opensearchserver.com/
+[16]:http://www.quantumobject.com:49164/opensearchserver/
