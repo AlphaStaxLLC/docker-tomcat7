@@ -8,9 +8,7 @@ MAINTAINER Angel Rodriguez "angel@quantumobject.com"
 #Installation of nesesary package/software for this containers...
 RUN echo "deb http://archive.ubuntu.com/ubuntu utopic-backports main restricted " >> /etc/apt/sources.list
 
-RUN apt-get update && apt-get install -y -q --force-yes mysql-server \
-                                                        openjdk-7-jdk \
-                                                        tomcat7 \
+RUN apt-get update && apt-get install -y -q --force-yes tomcat7 \
                                                         tomcat7-common \
                                                         tomcat7-docs \
                                                         tomcat7-admin \
@@ -26,11 +24,6 @@ RUN apt-get update && apt-get install -y -q --force-yes mysql-server \
 RUN mkdir -p /etc/my_init.d
 COPY startup.sh /etc/my_init.d/startup.sh
 RUN chmod +x /etc/my_init.d/startup.sh
-
-##Adding Deamons to containers
-RUN mkdir /etc/service/mysqld
-COPY mysqld.sh /etc/service/mysqld/run
-RUN chmod +x /etc/service/mysqld/run
 
 # to add tomcat7 deamon to runit
 RUN mkdir /etc/service/tomcat7
@@ -53,9 +46,6 @@ VOLUME /var/backups
 # to allow access from outside of the container to the container service
 # at that ports need to allow access from firewall if need to access it outside of the server.
 EXPOSE 8080
-
-#reatian of volume
-#VOLUME
 
 #Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
